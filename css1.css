@@ -1,0 +1,117 @@
+body{
+    text-align: center;
+}
+.action,.num{
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 10px;
+    font-family: "aharoni";
+    font-size:35px;
+    margin-bottom: 5px;
+    border:none;
+
+}
+.action{
+
+    background: rgb(255, 186, 252);
+}
+.action:hover,.num:hover{
+    background: lightgray;
+    cursor: pointer;
+
+
+}
+.action:active,.num:active{
+    background: rgb(255, 153, 255);
+    cursor: pointer;
+
+
+}
+
+.edit, .remove{
+    padding: 5px;
+    border:none;
+    border-radius: 7px;
+    background: gray;
+    font-family: "aharoni";
+    float: right;
+}
+.edit:hover, .remove:hover{
+    background: white;
+    cursor: pointer;
+}
+
+.edit{
+    background: lightgreen;
+}
+.remove{
+    background: rgb(255, 93, 93);
+}
+
+#input{
+    width: 72%;
+    margin: 10px 20px 30px 20px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 12px;
+    background: rgb(255, 234, 243);
+    font-size:45px;
+    font-family: "aharoni";
+}
+#log{
+    background: rgb(235, 235, 235);
+    width: 70%;
+    min-height:0px;
+    margin: 0px 20px 10px 20px;
+    padding: 12px;
+    border-radius: 12px;
+    display: inline-block;
+    text-align: left;
+    border:2px solid lightgray;
+    font-family: "aharoni";
+    font-size:30px;
+
+}
+#form{
+
+    background: rgb(36, 139, 207);
+    width:350px;
+    border:1 gray solid;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px gray;
+    padding: 15px 5px 10px 5px;
+    display: inline-block;
+    margin-top: 20px;
+
+}
+button:focus, input:focus{
+    outline: none;
+}
+div,button,input{
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select:none; 
+    user-select:none;
+    -o-user-select:none;
+
+}
+span[contenteditable]{
+background: rgb(212, 212, 212);
+
+}
+
+.ani{
+    animation: stroke 1s;
+}
+
+@keyframes stroke{
+    50%{box-shadow: 0px 0px 20px red;}
+    100%{box-shadow: 0px 0px 20px rgba(255,255,255,0);}
+}
+.resize{
+    animation: resize 3s forwards;
+}
+
+@keyframes resize{
+    100%{min-height: 150px}
+}
