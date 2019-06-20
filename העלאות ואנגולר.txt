@@ -1,0 +1,18 @@
+git init
+
+git config --global user.name "Mona Lisa"
+git config --global user.email "MonaLisa@mail.com"
+git add .
+git commit -m "my commit"
+git push origin master
+
+
+
+ng new my-new-angular-app
+
+cd my-new-angular-app
+
+ ng build --prod --base-href https://debugmodedotnet.github.io/demo9/ 
+
+ngh --
+no-silent
